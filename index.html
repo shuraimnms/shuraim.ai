@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shuraim.ai - Text-to-Image Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shuraim.ai - Text-to-Image Generator</h1>
+    <form id="textForm" method="POST" action="/generate">
+        <input type="text" id="textInput" name="text" placeholder="Enter a description" required>
+        <button type="submit">Generate Image</button>
+    </form>
+    <img id="generatedImage" src="" alt="Generated Image">
+</body>
+</html>
