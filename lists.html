@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Working with Lists</title>
+</head>
+<body>
+	<style>
+	/* Reset some default styles for better consistency across browsers */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a nice background and text color to the body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  padding: 20px;
+}
+
+/* Style the main header */
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Style the subheaders */
+h2 {
+  color: #2980b9;
+  font-size: 1.6rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Style the ordered list */
+ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+ol li {
+  background-color: #ecf0f1;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the unordered list */
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for nested (child) lists */
+ul ul, ol ol {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul ul li, ol ol li {
+  background-color: #f0f0f0;
+}
+
+/* Style for definition lists */
+dl {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+dt {
+  font-weight: bold;
+  color: #2980b9;
+  margin-bottom: 8px;
+}
+
+dd {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Add some spacing between the sections */
+h2 + ul, h2 + ol, h2 + dl {
+  margin-top: 15px;
+}
+</style>
+  <h1>Lists in HTML</h1>
+  
+  <h2>Ordered List</h2>
+  <ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+
+  <h2>Unordered List</h2>
+  <ul>
+    <li>Item A</li>
+    <li>Item B</li>
+  </ul>
+
+  <h2>Parent and Child List</h2>
+  <ul>
+    <li>Parent Item 2
+      <ul>
+        <li>Child Item 3</li>
+        <li>Child Item 4</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Ordered List Inside an Unordered List</h2>
+  <ul>
+    <li>Category 1</li>
+      <ol>
+        <li>Sub-item 1</li>
+        <li>Sub-item 2</li>
+      </ol>
+    </li>
+    <li>Category 2</li>
+      <ol>
+        <li>Sub-item 3</li>
+        <li>Sub-item 4</li>
+      </ol>
+    </li>
+  </ul>
+
+  <h2>Definition List</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+    <dt>JavaScript</dt>
+    <dd>Programming language for the web</dd>
+  </dl>
+</body>
+</html>
